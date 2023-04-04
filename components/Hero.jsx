@@ -13,3 +13,4 @@ export const Hero = ({heading, message}) => {
     </div>
   )
 }
+
