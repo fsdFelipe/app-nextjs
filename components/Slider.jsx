@@ -1,5 +1,6 @@
 import React from 'react'
 import { SliderData } from './SliderData';
+import Image from 'next/image'
 
 const Slider = ({slides}) => {
   return (
@@ -7,7 +8,11 @@ const Slider = ({slides}) => {
         <h1>Gallery</h1>
         <div>
         {SliderData.map((slide, index) => {
-        return <img src={slide.image} alt='/' />
+        return(
+            <div>
+            <Image src={slide.image} alt='/' width='1440' height='600' object-fit='cover' />
+            </div>
+        ) 
     })}
         </div>
     </div>
